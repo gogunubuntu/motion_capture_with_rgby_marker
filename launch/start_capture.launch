@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find realsense2_camera)/launch/rs_rgbd.launch"/>
+
+	<node name="get_marker_tf" pkg="motion_capture_with_rgby_marker" type="get_marker_tf"/>
+</launch>
